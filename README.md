@@ -1,5 +1,5 @@
 # LeetCode - Top Interview Questions
-### Easy Collection
+### [Easy Collection](https://leetcode.com/explore/interview/card/top-interview-questions-easy/)
 
 A collection of my solutions programmed using [Kotlin](https://kotlinlang.org/).
 
