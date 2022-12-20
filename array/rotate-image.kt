@@ -1,11 +1,11 @@
 // Rotate Image
 
 class Solution {
-
     fun rotate(matrix: Array<IntArray>) {
+        val n = matrix.size
         // The trick here is to: transpose the matrix and then a vertical (columns) reverse over the
         // matrix.
-        fun transpose(matrix: Array<IntArray>, n: Int) {
+        fun transpose() {
             for (i in 0 until n) {
                 for (j in i + 1 until n) {
                     val tmp = matrix[i][j]
@@ -14,8 +14,7 @@ class Solution {
                 }
             }
         }
-
-        fun reverseColumns(matrix: Array<IntArray>, n: Int) {
+        fun reverseColumns() {
             for (i in 0 until n) {
                 for (j in 0 until n / 2) {
                     val tmp = matrix[i][j]
@@ -25,7 +24,7 @@ class Solution {
             }
         }
 
-        transpose(matrix, matrix.size)
-        reverseColumns(matrix, matrix.size)
+        transpose()
+        reverseColumns()
     }
 }

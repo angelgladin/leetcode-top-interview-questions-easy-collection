@@ -1,8 +1,8 @@
 // Rotate Array
 
 class Solution {
-    fun rotate(nums: IntArray, k: Int): Unit {
-        fun reverseSubsegment(nums: IntArray, start: Int, end: Int) {
+    fun rotate(nums: IntArray, k: Int) {
+        fun reverseSubsegment(start: Int, end: Int) {
             var start = start
             var end = end
             while (start < end) {
@@ -17,9 +17,8 @@ class Solution {
 
         val n = nums.size
         val k = k % n
-
-        reverseSubsegment(nums, 0, n - 1)
-        reverseSubsegment(nums, 0, k - 1)
-        reverseSubsegment(nums, k, n - 1)
+        reverseSubsegment(0, n - 1)
+        reverseSubsegment(0, k - 1)
+        reverseSubsegment(k, n - 1)
     }
 }

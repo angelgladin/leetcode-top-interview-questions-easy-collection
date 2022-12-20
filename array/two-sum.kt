@@ -14,7 +14,6 @@ class Solution {
             var j = hashTable.get(sum)
             if (j != null && i != j) {
                 result = intArrayOf(i, j)
-
                 break
             }
         }

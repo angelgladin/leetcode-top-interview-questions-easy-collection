@@ -9,6 +9,7 @@ class Solution {
             valuesList.add(value)
             current = current.next
         }
+        
         var i = 0
         var j = valuesList.size - 1
         while (i < j) {

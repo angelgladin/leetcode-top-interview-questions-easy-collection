@@ -9,7 +9,6 @@ class Solution {
         var l2 = list2
         val dummyNode = ListNode(-1)
         var current = dummyNode
-
         while (l1 != null && l2 != null) {
             if (l1.`val` < l2.`val`) {
                 current.next = l1
@@ -20,6 +19,7 @@ class Solution {
             }
             current = current.next
         }
+        
         if (l1 == null) {
             current.next = l2
         }
