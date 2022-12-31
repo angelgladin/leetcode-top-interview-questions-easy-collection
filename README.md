@@ -26,3 +26,4 @@ The TypeScript code follows the [Google TypeScript Style Guide](https://google.g
 - [ ] Create a script for creating the `.ts` template file of all the `*.kt` codes.
 - [ ] Solve the problems using [TypeScript](https://www.typescriptlang.org/).
 - [ ] Start solving the [`Medium Collection`](https://leetcode.com/explore/interview/card/top-interview-questions-medium/).
+- [ ] How to test Kotlin code.
