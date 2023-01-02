@@ -23,7 +23,19 @@ The TypeScript code follows the [Google TypeScript Style Guide](https://google.g
 
 ### What's next?
 
-- [ ] Create a script for creating the `.ts` template file of all the `*.kt` codes.
+- [x] [Create a script for creating the `.ts` template file of all the `*.kt` codes](file_creator.py).
 - [ ] Solve the problems using [TypeScript](https://www.typescriptlang.org/).
 - [ ] Start solving the [`Medium Collection`](https://leetcode.com/explore/interview/card/top-interview-questions-medium/).
 - [ ] How to test Kotlin code.
+
+### How to use [file_creator.py](file_creator.py)?
+
+Example,
+
+```bash
+$ python3 file_creator.py -i kt -o ts -f .
+```
+
+- `kt`: Stands for _Kotlin_ input file extention.
+- `ts`: Stands for _TypeScript_ output file extention.
+- `.`: The path of the _folder_.
