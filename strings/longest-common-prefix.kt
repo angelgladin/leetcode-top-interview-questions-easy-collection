@@ -7,7 +7,6 @@ class Solution {
         var prefixSoFar = ""
         var longestCommonPrefix = strs.first()
         for (k in 1 until strs.size) {
-
             var prefixSize = 0
             for (i in 0 until strs[k].length) {
                 val longestCommonPrefixChar = longestCommonPrefix.getOrNull(i)
@@ -17,9 +16,11 @@ class Solution {
                 }
                 prefixSize = i + 1
             }
+
             prefixSoFar = strs[k].substring(0, prefixSize)
             longestCommonPrefix = prefixSoFar
         }
+        
         return longestCommonPrefix
     }
 }
