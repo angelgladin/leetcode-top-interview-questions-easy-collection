@@ -2,12 +2,12 @@
 
 class Solution {
     fun climbStairs(n: Int): Int {
-        val dp = IntArray(46)
-        dp[1] = 1
-        dp[2] = 2
+        val ways = IntArray(46) // `n` problem constraint
+        ways[1] = 1
+        ways[2] = 2
         for (i in 3..n) {
-            dp[i] = dp[i - 1] + dp[i - 2]
+            ways[i] = ways[i - 1] + ways[i - 2]
         }
-        return dp[n]
+        return ways[n]
     }
 }
